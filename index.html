@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="bg-[#f2ebe3] sm:p-10">
+    <main class="flex justify-center items-center h-[100vh]">
+      <article class="bg-[#fff] max-sm:w-[90%] w-[60%] rounded-xl sm:flex ">
+        <section class="sm:w-[50%]">
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="product-image"
+            class="rounded-t-xl sm:hidden"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="product-image"
+            class="rounded-l-xl max-sm:hidden"
+          />
+        </section>
+
+        <div class="sm:w-[50%] sm:p-3">
+          <section class="px-7 pt-7">
+            <p class="tracking-[0.34rem] sm:tracking-[0.5rem] font-semibold max-sm:text-sm">PERFUME</p>
+            <h1 class="f text-4xl sm:text-5xl text-[#1c232b] font-bold my-5 sm:mb-9">
+              Gabrielle Essence Eau De Parfume
+            </h1>
+
+            <p class="max-sm:text-sm leading-6 sm:leading-8 tracking-wider sm:tracking-[0.1em] font-semibold">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </section>
+
+          <section class="px-7 sm:pb-9 pb-7">
+            <div class="flex gap-5 items-center my-5 sm:my-8">
+              <p class="f text-[#3c8067] text-4xl font-bold">$149.99</p>
+              <p class="text-sm line-through">$169.99</p>
+            </div>
+
+            <div class="">
+              <button
+                class="bg-[#3c8067] hover:bg-[#2b5d4b] w-full rounded-xl p-4 flex justify-center items-center gap-3"
+              >
+                <p class="">
+                  <img src="images/icon-cart.svg" alt="cart-icon" />
+                </p>
+                <p class="text-white font-semibold">Add to Cart</p>
+              </button>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.
+      <br />
+      Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/ChrisRoland"
+        target="_blank"
+        >Chris Ebube Roland</a
+      >.
+    </footer>
+  </body>
+</html>
